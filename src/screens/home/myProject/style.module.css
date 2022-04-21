@@ -1,0 +1,20 @@
+.continer {
+    margin: 3%;
+    margin-inline: 10%;
+}
+
+.divProjects {
+    width: 100%;
+    /* background-color: red; */
+    border: solid;
+    border-width: 0px;
+    border-bottom-width: 2px;
+    padding-bottom: 20px;
+    border-color: rgba(119, 119, 119, 0.174);
+}
+
+.divProjects h1 {
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

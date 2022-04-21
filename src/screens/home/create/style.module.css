@@ -1,0 +1,35 @@
+.continer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.continer img {
+    width: 300px;
+    height: 300px;
+}
+
+.buttonSave {
+    border: solid;
+    border-width: 0ch;
+    background-color: #18408D;
+    color: #fff;
+    /* padding: 10px; */
+    border-radius: 20px;
+    /* padding-inline: 25px; */
+    float: right;
+    margin: 20px;
+    height: 70px;
+    width: 250px;
+    font-size: 25px;
+    border-radius: 16px;
+}
+
+.inputText {
+    /* margin-top: 30px; */
+    width: 30%;
+    font-size: 40px;
+    /* height: 200px; */
+}
