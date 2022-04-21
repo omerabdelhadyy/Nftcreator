@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import React, { useState } from "react";
 import Input from "../../component/textFaild";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LockIcon from "@mui/icons-material/LockOpen";
 import style from "./style.module.css";
 import Button from "@mui/material/Button";
-import Typical from "react-typical";
 
 export default function Login({ history }) {
   const [typeScreen, setTypeScreen] = useState("login");
@@ -46,7 +46,10 @@ export default function Login({ history }) {
         </div>
       </div>
       <div className={style.rightDiv}>
-        <img src="https://cdn.sanity.io/images/s7xbv9bz/production/a64efd53f75ea14095de793ea5f3d4b329fcaa65-1283x715.png?w=1200&h=669&auto=format&fm=webp" />
+        <img
+          src="https://cdn.sanity.io/images/s7xbv9bz/production/a64efd53f75ea14095de793ea5f3d4b329fcaa65-1283x715.png?w=1200&h=669&auto=format&fm=webp"
+          alt="image"
+        />
         <h1>
           {/* <Typical
             steps={["NFT", 1000, "NFT MARKETPLACE", 50]}

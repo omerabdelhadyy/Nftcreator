@@ -6,16 +6,14 @@ import { TextField, Button } from "@mui/material";
 import DrawingCollectible from "../../../json/DrawingCollectible.json";
 import metadata from "./metadata.js";
 import Web3 from "web3";
-import Web3Modal from "web3modal";
-import { ethers } from "ethers";
 import { OpenSeaPort, Network } from "opensea-js";
 
 export default function CreateNFT() {
   const [deployedContract, setDeployedContract] = useState();
   const [account, setAccount] = useState();
-  const [balance, setBalance] = useState();
-  const [name, setName] = useState();
-  const [symbol, setSymbol] = useState();
+  const [, setBalance] = useState();
+  const [, setName] = useState();
+  const [, setSymbol] = useState();
 
   const ipfsAPI = require("ipfs-api");
 
@@ -50,6 +48,7 @@ export default function CreateNFT() {
       if (userAccount.length) {
         //user already login in metamask
         console.log("done login");
+        await window.ethereum.enable();
       } else {
         window.web3 = new Web3(window.ethereum);
         await window.ethereum.enable();
@@ -98,10 +97,12 @@ export default function CreateNFT() {
     }
   };
   const provider = new Web3.providers.HttpProvider("https://mainnet.infura.io");
+
   const seaport = new OpenSeaPort(provider, {
     networkName: Network.Main,
     apiKey: "0xd9145CCE52D386f254917e481eB44e9943F39138",
   });
+
   const download = async () => {
     // const buyerAddress = "0x123...";
     // const listing = await seaport.createSellOrder({
@@ -120,43 +121,30 @@ export default function CreateNFT() {
     // const erc20 = new ethers.Contract(data, DrawingCollectible, provider);
     // console.log(await erc20.name());
     // console.log("buffer");
-    // metadata.image = "testtest";
-    // console.log("image uploaded to IPFS image URI:" + metadata.image);
-    // console.log(metadata);
-    // let metadataBuffer = Buffer.from(JSON.stringify(metadata));
-    // ipfs?.files?.add?.(metadataBuffer, (error, secondResult) => {
-    //   if (secondResult) {
-    //     console.log("secondResult", secondResult?.[0].hash);
-    //     const tokenURI = INFURA_HTTPS + secondResult?.[0].hash;
-    //     console.log("Metadata uploaded to IPFS image as JSON URI:" + tokenURI);
-    //     deployedContract.methods
-    //       .createCollectible(tokenURI)
-    //       .send({ from: account })
-    //       .on("transactionHash", (hash) => {
-    //         console.log("success, transction hash: ", hash);
-    //       });
-    //   }
-    //   if (error) {
-    //     console.log("error", error);
-    //   }
-    // });
+    metadata.image = "testtest";
+    console.log("image uploaded to IPFS image URI:" + metadata.image);
+    console.log(metadata);
+    let metadataBuffer = Buffer.from(JSON.stringify(metadata));
+    ipfs?.files?.add?.(metadataBuffer, (error, secondResult) => {
+      if (secondResult) {
+        console.log("secondResult", secondResult?.[0].hash);
+        const tokenURI = INFURA_HTTPS + secondResult?.[0].hash;
+        console.log("Metadata uploaded to IPFS image as JSON URI:" + tokenURI);
+        deployedContract.methods
+          .createCollectible(tokenURI)
+          .send({ from: account })
+          .on("transactionHash", (hash) => {
+            console.log("success, transction hash: ", hash);
+          });
+      }
+      if (error) {
+        console.log("error", error);
+      }
+    });
   };
 
   return (
     <>
-      <Button
-        onClick={createNFT}
-        style={{
-          borderRadius: 16,
-          fontSize: 25,
-          backgroundColor: "#18408D",
-          margin: 10,
-        }}
-        className={style.buttonSave}
-        variant="contained"
-      >
-        Create NFT
-      </Button>
       <div className={style.continer}>
         <img src={Soqrat} />
         <Select />
@@ -171,6 +159,20 @@ export default function CreateNFT() {
           label="Text"
           variant="outlined"
         />
+        <Button
+          onClick={createNFT}
+          style={{
+            borderRadius: 16,
+            fontSize: 25,
+            backgroundColor: "#18408D",
+            marginTop: 30,
+            width: "30%",
+          }}
+          className={style.buttonSave}
+          variant="contained"
+        >
+          Create NFT
+        </Button>
       </div>
     </>
   );
