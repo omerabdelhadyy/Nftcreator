@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Nftcreator/static/css/main.fc6635d8.chunk.css",
+    "main.js": "/Nftcreator/static/js/main.dd4d3945.chunk.js",
+    "main.js.map": "/Nftcreator/static/js/main.dd4d3945.chunk.js.map",
+    "runtime-main.js": "/Nftcreator/static/js/runtime-main.a048ab3a.js",
+    "runtime-main.js.map": "/Nftcreator/static/js/runtime-main.a048ab3a.js.map",
+    "static/js/2.cde2491b.chunk.js": "/Nftcreator/static/js/2.cde2491b.chunk.js",
+    "static/js/2.cde2491b.chunk.js.map": "/Nftcreator/static/js/2.cde2491b.chunk.js.map",
+    "static/js/3.f634fd48.chunk.js": "/Nftcreator/static/js/3.f634fd48.chunk.js",
+    "static/js/3.f634fd48.chunk.js.map": "/Nftcreator/static/js/3.f634fd48.chunk.js.map",
+    "index.html": "/Nftcreator/index.html",
+    "static/css/main.fc6635d8.chunk.css.map": "/Nftcreator/static/css/main.fc6635d8.chunk.css.map",
+    "static/js/2.cde2491b.chunk.js.LICENSE.txt": "/Nftcreator/static/js/2.cde2491b.chunk.js.LICENSE.txt",
+    "static/media/soqrat.png": "/Nftcreator/static/media/soqrat.d426145e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a048ab3a.js",
+    "static/js/2.cde2491b.chunk.js",
+    "static/css/main.fc6635d8.chunk.css",
+    "static/js/main.dd4d3945.chunk.js"
+  ]
+}
