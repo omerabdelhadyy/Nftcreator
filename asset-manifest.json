@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/nftcreator/static/css/main.fc6635d8.chunk.css",
-    "main.js": "/nftcreator/static/js/main.dd4d3945.chunk.js",
-    "main.js.map": "/nftcreator/static/js/main.dd4d3945.chunk.js.map",
+    "main.css": "/nftcreator/static/css/main.0bfaf22c.chunk.css",
+    "main.js": "/nftcreator/static/js/main.874ed8b8.chunk.js",
+    "main.js.map": "/nftcreator/static/js/main.874ed8b8.chunk.js.map",
     "runtime-main.js": "/nftcreator/static/js/runtime-main.92ff8a54.js",
     "runtime-main.js.map": "/nftcreator/static/js/runtime-main.92ff8a54.js.map",
     "static/js/2.a7c4218a.chunk.js": "/nftcreator/static/js/2.a7c4218a.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.f634fd48.chunk.js": "/nftcreator/static/js/3.f634fd48.chunk.js",
     "static/js/3.f634fd48.chunk.js.map": "/nftcreator/static/js/3.f634fd48.chunk.js.map",
     "index.html": "/nftcreator/index.html",
-    "static/css/main.fc6635d8.chunk.css.map": "/nftcreator/static/css/main.fc6635d8.chunk.css.map",
+    "static/css/main.0bfaf22c.chunk.css.map": "/nftcreator/static/css/main.0bfaf22c.chunk.css.map",
     "static/js/2.a7c4218a.chunk.js.LICENSE.txt": "/nftcreator/static/js/2.a7c4218a.chunk.js.LICENSE.txt",
     "static/media/soqrat.png": "/nftcreator/static/media/soqrat.d426145e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.92ff8a54.js",
     "static/js/2.a7c4218a.chunk.js",
-    "static/css/main.fc6635d8.chunk.css",
-    "static/js/main.dd4d3945.chunk.js"
+    "static/css/main.0bfaf22c.chunk.css",
+    "static/js/main.874ed8b8.chunk.js"
   ]
 }
