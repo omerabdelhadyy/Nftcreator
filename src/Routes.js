@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Login from "./screens/login/login.screen";
 import Home from "./screens/home/home.screen";
 
@@ -14,12 +14,11 @@ class Routes extends Component {
   componentDidMount = async () => {};
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/nftcreator">
         <Switch>
           <Route path={"/home/:id"} component={Home} />
           <Route path={"/"} component={Login} />
         </Switch>
-        {/* {this.state.redirect && <Redirect to={"/login"} />} */}
       </BrowserRouter>
     );
   }

@@ -14,7 +14,7 @@ export default function InputWithIcon({ Icone, placeholder }) {
         variant="standard"
         style={{
           backgroundColor: "#fff",
-          padding: 10,
+          padding: 5,
           borderRadius: 22,
           borderColor: "#EAEAEA",
           border: "solid",
@@ -27,13 +27,13 @@ export default function InputWithIcon({ Icone, placeholder }) {
         </InputLabel> */}
         <Input
           type={placeholder === "Password" && "password"}
-          style={{ fontSize: 25 }}
+          style={{ fontSize: 10 }}
           placeholder={placeholder}
           disableUnderline
           id="input-with-icon-adornment"
           startAdornment={
             <InputAdornment position="start">
-              <Icone style={{ fontSize: 40 }} />
+              <Icone style={{ fontSize: 20 }} />
             </InputAdornment>
           }
         />

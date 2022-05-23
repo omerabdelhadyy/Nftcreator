@@ -10,9 +10,9 @@ export default function Header() {
         NFT MARKET<span style={{ fontWeight: "400" }}>PLASE</span>
       </h1>
       <div className={style.continerEmail}>
-        <PersonIcon style={{ fontSize: 50 }} />
+        <PersonIcon style={{ fontSize: 25 }} />
         <h1>omerabdelhady62@gmail.com</h1>
-        <ArrowDropDownIcon style={{ fontSize: 40, color: "#666" }} />
+        <ArrowDropDownIcon style={{ fontSize: 25, color: "#666" }} />
       </div>
     </div>
   );

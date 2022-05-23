@@ -20,14 +20,16 @@ export default function Header() {
         className={style.continerItem}
         style={{
           backgroundColor: id == 1 && "#fff",
-          borderTopRightRadius: id == 1 && 30,
+          borderTopRightRadius: id == 1 && 15,
         }}
       >
         <div
           className={style.continerAddIcon}
           style={{ backgroundColor: id == 1 && "#18408D" }}
         >
-          <AddIcon style={{ color: id == 1 ? "#fff" : "#18408D" }} />
+          <AddIcon
+            style={{ fontSize: 20, color: id == 1 ? "#fff" : "#18408D" }}
+          />
         </div>
         <h1 style={{ color: id == 1 && "#18408D" }}>Create New</h1>
       </div>
@@ -40,14 +42,16 @@ export default function Header() {
         className={style.continerItem}
         style={{
           backgroundColor: id == 2 && "#fff",
-          borderTopRightRadius: id == 2 && 30,
+          borderTopRightRadius: id == 2 && 15,
         }}
       >
         <div
           className={style.continerAddIcon}
           style={{ backgroundColor: id == 2 && "#18408D" }}
         >
-          <StreetviewIcon style={{ color: id == 2 ? "#fff" : "#18408D" }} />
+          <StreetviewIcon
+            style={{ fontSize: 18, color: id == 2 ? "#fff" : "#18408D" }}
+          />
         </div>
         <h1 style={{ color: id == 2 && "#18408D" }}>My Projects</h1>
       </div>
@@ -59,11 +63,11 @@ export default function Header() {
         className={style.continerItem}
         style={{
           backgroundColor: id == 3 && "#fff",
-          borderTopRightRadius: id == 3 && 30,
+          borderTopRightRadius: id == 3 && 15,
         }}
       >
         <GridViewIcon
-          style={{ fontSize: 50, color: id == 3 ? "#18408D" : "#fff" }}
+          style={{ fontSize: 30, color: id == 3 ? "#18408D" : "#fff" }}
         />
         <h1 style={{ color: id == 3 && "#18408D" }}>Stats</h1>
       </div>

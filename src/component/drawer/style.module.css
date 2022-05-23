@@ -15,8 +15,8 @@
     flex-direction: column;
     align-items: center;
     /* margin-bottom: 5px; */
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 80px;
     justify-content: center;
     /* background-color: red; */
     cursor: pointer;
@@ -32,7 +32,7 @@
     /* margin: 5%; */
     color: #fff;
     font-weight: 400;
-    font-size: 23px;
+    font-size: 13px;
 }
 
 .continerAddIcon {
@@ -42,6 +42,6 @@
     align-items: center;
     border-radius: 50px;
     justify-content: center;
-    height: 50px;
-    width: 50px;
+    height: 28px;
+    width: 28px;
 }

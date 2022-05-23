@@ -8,11 +8,11 @@
 }
 
 .image {
-    width: 90px;
-    height: 90px;
+    width: 40px;
+    height: 40px;
     border-radius: 50px;
     margin-inline: 10px;
-    margin-block: 25px;
+    margin-block: 15px;
 }
 
 .title {

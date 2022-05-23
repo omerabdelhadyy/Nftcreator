@@ -57,39 +57,42 @@ const rows = [
 
 export default function DenseTable() {
   return (
-    <TableContainer component={Paper}>
+    <TableContainer
+      component={Paper}
+      style={{ width: "95%", marginLeft: "2%" }}
+    >
       <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
         <TableHead>
           <TableRow>
             <TableCell
-              style={{ fontSize: 30, fontWeight: "bold" }}
+              style={{ fontSize: 15, fontWeight: "bold" }}
               className={style.title}
             >
               Collection
             </TableCell>
             <TableCell
-              style={{ fontSize: 30, fontWeight: "bold" }}
+              style={{ fontSize: 15, fontWeight: "bold" }}
               align="center"
               className={style.title}
             >
               Volume
             </TableCell>
             <TableCell
-              style={{ fontSize: 30, fontWeight: "bold" }}
+              style={{ fontSize: 15, fontWeight: "bold" }}
               align="center"
               className={style.title}
             >
               Floor Price
             </TableCell>
             <TableCell
-              style={{ fontSize: 30, fontWeight: "bold" }}
+              style={{ fontSize: 15, fontWeight: "bold" }}
               align="center"
               className={style.title}
             >
               Owners
             </TableCell>
             <TableCell
-              style={{ fontSize: 30, fontWeight: "bold" }}
+              style={{ fontSize: 15, fontWeight: "bold" }}
               align="center"
               className={style.title}
             >
@@ -116,33 +119,33 @@ export default function DenseTable() {
                   alignItems: "center",
                 }}
               >
-                <h1>{index + 1}</h1>
+                <h1 style={{ fontSize: 20 }}>{index + 1}</h1>
                 <img src={row.image} className={style.image} />
-                <h2 style={{ fontSize: 30 }}>{row.name}</h2>
+                <h2 style={{ fontSize: 15 }}>{row.name}</h2>
               </TableCell>
               <TableCell
-                style={{ fontSize: 30, fontWeight: "bold" }}
+                style={{ fontSize: 15, fontWeight: "bold" }}
                 className={style.value}
                 align="center"
               >
                 {row.calories}
               </TableCell>
               <TableCell
-                style={{ fontSize: 30, fontWeight: "bold" }}
+                style={{ fontSize: 15, fontWeight: "bold" }}
                 className={style.value}
                 align="center"
               >
                 {row.fat}
               </TableCell>
               <TableCell
-                style={{ fontSize: 30, fontWeight: "bold" }}
+                style={{ fontSize: 15, fontWeight: "bold" }}
                 className={style.value}
                 align="center"
               >
                 {row.carbs}
               </TableCell>
               <TableCell
-                style={{ fontSize: 30, fontWeight: "bold" }}
+                style={{ fontSize: 15, fontWeight: "bold" }}
                 className={style.value}
                 align="center"
               >

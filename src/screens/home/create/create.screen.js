@@ -27,7 +27,7 @@ export default function CreateNFT() {
   }, []);
 
   const createNFT = async () => {
-    download();
+    // download();
   };
   // const provider = await web3Modal.connect();
   // const web3 = new Web3(provider);
@@ -149,9 +149,9 @@ export default function CreateNFT() {
         <img src={Soqrat} />
         <Select />
         <TextField
-          InputLabelProps={{ style: { fontSize: 35 } }}
-          inputProps={{ style: { fontSize: 30, padding: 10 } }}
-          style={{ marginTop: 30, fontSize: 40 }}
+          InputLabelProps={{ style: { fontSize: 15 } }}
+          inputProps={{ style: { fontSize: 15, padding: 0 } }}
+          style={{ marginTop: 20, fontSize: 15 }}
           rows={6}
           multiline
           className={style.inputText}
@@ -163,7 +163,7 @@ export default function CreateNFT() {
           onClick={createNFT}
           style={{
             borderRadius: 16,
-            fontSize: 25,
+            fontSize: 15,
             backgroundColor: "#18408D",
             marginTop: 30,
             width: "30%",
